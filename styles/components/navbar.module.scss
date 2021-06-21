@@ -1,0 +1,39 @@
+.navbar {
+  @apply flex relative items-start gap-2 md:gap-5 z-10 max-w-full lg:max-w-6xl mx-auto px-4 sm:px-6 h-full w-full;
+  @apply py-6;
+
+  .navbarButton {
+    @apply hover:bg-primary-100 rounded-full px-3 py-3;
+    @apply transition-all duration-200 ease-in-out;
+  }
+}
+
+.headline {
+  @apply flex relative items-center gap-10 z-10 max-w-full lg:max-w-6xl mx-auto px-4 sm:px-6 h-full w-full;
+  @apply py-3 justify-end lg:justify-between;
+
+
+  .headlineLeft {
+    @apply flex-none hidden lg:block;
+
+    ul > li {
+      @apply px-3 text-xs text-white mb-1;
+
+      a {
+        @apply hover:underline;
+      }
+    }
+  }
+
+  .headlineRight {
+    @apply flex-none;
+
+    ul > li {
+      @apply px-3 text-xs text-white mb-1;
+
+      a {
+        @apply hover:underline font-bold;
+      }
+    }
+  }
+}
